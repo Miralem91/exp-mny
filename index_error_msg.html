@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expert In Money Page 2</title>
+    <title>Expert In Money_error_msg</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
@@ -35,35 +35,34 @@
             <h1>Risparmia quando vendi la tua casa </h1>
             <p>Vendi casa oggi stesso. Agenzia immobiliare online con provvigione variabile ridotta</p>
         </div>
-
         <div class="container" id="survey-container">
             <div class="progress mb-5 mt-4">
-                <div class="progress-bar" role="progressbar" style="width:10%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span class="progress-text">10%</span></div>
+                <div class="progress-bar" role="progressbar" style="width:0.5%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span class="progress-text">Avanzamento: %</span></div>
             </div>
 
-            <p class="survey-question">Hai mai usato un'agenzia immobiliare online?</p>
-            <form action="">
-                <div class="input-div">
-                    <input type="radio" name="survey-radio" id="radio-1">
-                    <label class="input-lable" for="radio-1">Si</label>
+            <p class="survey-question text-center">L’immobile è di tua proprietà?</p>
+
+            <div class="survey-images">
+                <div class="survey-image survey-image-own alert-msg">
+                    <img src="assets/images/[quotes.expertsinmoney.com][478]icon-solaire-own.svg" alt="">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="radio-own" name="survey-radio">
+                        <label for="radio-own">Proprietario</label>
+                    </div>
                 </div>
-                <div class="input-div">
-                    <input type="radio" name="survey-radio" id="radio-2">
-                    <label class="input-lable" for="radio-2">No</label>
+
+                <div class="survey-image survey-image-rent alert-msg">
+                    <img src="assets/images/[quotes.expertsinmoney.com][588]icon-solaire-rent.svg" alt="">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="radio-rent" name="survey-radio">
+                        <label for="radio-rent">Inquilino</label>
+                    </div>
                 </div>
-            </form>
-
-            <button class="survey-button mt-5 mb-5">Continua</button>
-
-
-            <button class="go-back mb-3" <i class="fal fa-angle-left"></i>Indietro</button>
-            <div class="privacy pb-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M10 16c0-1.104.896-2 2-2s2 .896 2 2c0 .738-.404 1.376-1 1.723v2.277h-2v-2.277c-.596-.347-1-.985-1-1.723zm11-6v14h-18v-14h3v-4c0-3.313 2.687-6 6-6s6 2.687 6 6v4h3zm-13 0h8v-4c0-2.206-1.795-4-4-4s-4 1.794-4 4v4zm11 2h-14v10h14v-10z"/></svg>
-                <a href="">Inormativa sulla privacy e cookie</a>
             </div>
+            <p class="red-text ml-3 mt-4 pt-4 text-center">Per favore controlla i campi evidenziati.</p>
+            <button class="survey-button mt-5 mb-5">Chiedi dei Preventivi Gratuiti</button>
+            <p class="timer-text"><img src="assets/images/[quotes.expertsinmoney.com][270]timer_24px.52bf912c.svg" alt="timer"> Compila il modulo: basta meno di un minuto </p>
         </div>
-
-
         <div class="container mt-5 mb-5 pb-1" id="pre-footer">
             <h3>Ottieni dei preventivi da agenzie immobiliari online in 3 semplici passaggi </h3>
             <ol>
