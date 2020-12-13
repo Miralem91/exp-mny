@@ -64,7 +64,7 @@ input[type="checkbox"] {
 /*MOBILE HEADER START */
 
 .main-wrapper {
-    background: linear-gradient(#1C1466, #51b2df);
+    background: linear-gradient(#1C1466, #0090d3);
 }
 
 .brand {
@@ -348,6 +348,9 @@ input[type="checkbox"] {
     background-color: #D2D0E0;
     border-radius: 10px;
     padding: 40px !important;
+    -webkit-box-shadow: 2px 6px 14px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 6px 14px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 6px 14px 0px rgba(0, 0, 0, 0.75)
 }
 
 .marketing-container h1 {
@@ -373,6 +376,100 @@ input[type="checkbox"] {
     content: url(../assets/icons/warning.png);
     margin-right: 5px !important;
 }
+
+#faq {
+    background-color: white;
+    -webkit-box-shadow: 2px 6px 14px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 6px 14px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 6px 14px 0px rgba(0, 0, 0, 0.75)
+}
+
+.faq-title {
+    color: rgb(255, 255, 255);
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-shadow: 1px 1px #0e0e0e;
+}
+
+
+/*COLLAPSE*/
+
+#accordion .panel {
+    margin: 0 0 15px 10px;
+    background-color: white;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+#accordion .panel-heading {
+    padding: 0;
+    background-color: white;
+    border: none !important;
+}
+
+#accordion .panel-heading:hover {
+    padding: 0;
+    background-color: rgb(226, 226, 226);
+    border: none !important;
+}
+
+#accordion .panel-title a {
+    color: #111;
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    padding-bottom: 20px;
+    font-weight: 300;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    text-align: left;
+    font-size: 1.5rem;
+    border-bottom: 1px solid rgba(196, 196, 196, 0.685);
+    text-decoration: none!important;
+}
+
+#accordion .panel-title a.collapsed {
+    color: #111;
+    text-decoration: none!important;
+}
+
+#accordion .panel-title a::after,
+#accordion .panel-title a.collapsed::after {
+    color: #111;
+    content: '\f106';
+    font-family: fontawesome;
+    font-size: 2.5rem;
+    height: 55px;
+    right: 5px;
+    line-height: 55px;
+    position: absolute;
+    text-align: right !important;
+    top: -5px;
+    transition: all 0.3s ease 0s;
+    width: 55px;
+    float: right !important;
+    font-weight: 300;
+    text-decoration: none!important;
+}
+
+#accordion .panel-title a.collapsed::after {
+    content: '\f107';
+    color: #111;
+    font-weight: 300;
+}
+
+#accordion .panel-body {
+    padding: 20px 25px 10px 9px;
+    position: relative;
+}
+
+#accordion .panel-body p {
+    font-size: 1.5rem;
+}
+
+
+/*COLLAPSE ENDS*/
 
 
 /*MOBILE MAIN-ENDS*/
@@ -412,49 +509,109 @@ input[type="checkbox"] {
         border: none;
         width: 90%;
     }
-}
-
-.survey-button:hover {
-    -webkit-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
-    -moz-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
-    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
-    background: radial-gradient( #fba52d49, #f38f03);
-}
-
-.input-div {
-    height: 45px;
-    -webkit-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
-    -moz-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
-    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
-    margin-bottom: 20px !important;
-    line-height: 45px;
-    border-radius: 10px;
-    max-width: 630px !important;
-    display: block;
-    margin: 0 auto;
-    font-size: 1.8rem;
-}
-
-.input-div input {
-    margin-left: 10px !important;
-    padding-right: 10px !important;
-}
-
-.input-div:hover {
-    background-color: #E5F5FB;
-}
-
-.input-active {
-    background-color: #E5F5FB !important;
-}
-
-.input-div label {
-    display: inline-block;
-    width: 100%;
-    padding-left: 10px;
-    cursor: pointer;
-    font-size: 2rem;
-    font-weight: 200;
+    .survey-button:hover {
+        -webkit-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
+        -moz-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
+        box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
+        background: radial-gradient( #fba52d49, #f38f03);
+    }
+    .input-div {
+        height: 45px;
+        -webkit-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
+        -moz-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
+        box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
+        margin-bottom: 20px !important;
+        line-height: 45px;
+        border-radius: 10px;
+        max-width: 630px !important;
+        display: block;
+        margin: 0 auto;
+        font-size: 1.8rem;
+    }
+    .input-div input {
+        margin-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .input-div:hover {
+        background-color: #E5F5FB;
+    }
+    .input-active {
+        background-color: #E5F5FB !important;
+    }
+    .input-div label {
+        display: inline-block;
+        width: 100%;
+        padding-left: 10px;
+        cursor: pointer;
+        font-size: 2rem;
+        font-weight: 200;
+    }
+    #faq,
+    .marketing-container {
+        max-width: 900px !important;
+    }
+    /*COLLAPSE*/
+    #accordion .panel {
+        margin: 0 0 15px 10px;
+        background-color: #eee;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    #accordion .panel-heading {
+        padding: 0;
+        background-color: white;
+        border: none !important;
+    }
+    #accordion .panel-title a {
+        color: #111;
+        display: block;
+        width: 100%;
+        text-align: left;
+        font-size: 18px;
+        padding-bottom: 20px;
+        font-weight: 300;
+        position: relative;
+        transition: all 0.3s ease 0s;
+        text-align: left;
+        font-size: 1.5rem;
+        border-bottom: 1px solid rgba(196, 196, 196, 0.685);
+        text-decoration: none!important;
+    }
+    #accordion .panel-title a.collapsed {
+        color: #111;
+        text-decoration: none!important;
+    }
+    #accordion .panel-title a::after,
+    #accordion .panel-title a.collapsed::after {
+        color: #111;
+        content: '\f106';
+        font-family: fontawesome;
+        font-size: 2.5rem;
+        height: 55px;
+        right: 5px;
+        line-height: 55px;
+        position: absolute;
+        text-align: right !important;
+        top: -5px;
+        transition: all 0.3s ease 0s;
+        width: 55px;
+        float: right !important;
+        font-weight: 300;
+        text-decoration: none!important;
+    }
+    #accordion .panel-title a.collapsed::after {
+        content: '\f107';
+        color: #111;
+        font-weight: 300;
+    }
+    #accordion .panel-body {
+        padding: 20px 25px 10px 9px;
+        position: relative;
+    }
+    #accordion .panel-body p {
+        font-size: 1.5rem;
+    }
+    /*COLLAPSE ENDS*/
 }
 
 
