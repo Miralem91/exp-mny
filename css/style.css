@@ -1,0 +1,487 @@
+                            * {
+                                margin: 0;
+                                padding: 0;
+                                font-family: Muli, sans-serif;
+                                box-sizing: border-box;
+                            }
+                            
+                            .survey-image-clicked {
+                                background-color: #D7F9CC !important;
+                                position: relative;
+                            }
+                            
+                            .radio-inline-active {
+                                background-color: #E5F5FB !important;
+                                position: relative;
+                            }
+                            
+                            .radio-inline-active::after {
+                                content: "";
+                                width: 1.35rem;
+                                height: 1.35rem;
+                                position: absolute;
+                                top: 1.5rem;
+                                right: .6rem;
+                                background: #4cd6bc url(https://images.webforms.mvfglobal.com/cro/cro-tech-innovation/CRO-121/icon-valid.dbbf8e56.svg) no-repeat center/1rem;
+                                border-radius: 50%;
+                            }
+                            
+                            .progress-bar {
+                                background-color: lightblue !important;
+                            }
+                            
+                            .survey-image-clicked::after {
+                                content: "";
+                                width: 1.35rem;
+                                height: 1.35rem;
+                                position: absolute;
+                                top: .6rem;
+                                right: .6rem;
+                                background: #4cd6bc url(https://images.webforms.mvfglobal.com/cro/cro-tech-innovation/CRO-121/icon-valid.dbbf8e56.svg) no-repeat center/1rem;
+                                border-radius: 50%;
+                            }
+                            
+                            .alert-msg {
+                                border: #b00020 2px solid !important;
+                            }
+                            
+                            .red-text {
+                                color: #b00020;
+                                font-size: 1.5rem;
+                            }
+                            
+                            .sky-blue-div {
+                                background-color: rgba(135, 207, 235, 0.308);
+                                padding: 5px;
+                                color: rgba(68, 68, 68, 0.61);
+                            }
+                            
+                            input[type="checkbox"] {
+                                vertical-align: middle;
+                            }
+                            /*MOBILE HEADER START */
+                            
+                            .main-wrapper {
+                                background: linear-gradient(#1C1466, #51b2df);
+                            }
+                            
+                            .brand {
+                                width: 100%;
+                                margin-top: 20px;
+                                display: block;
+                            }
+                            
+                            .brand img {
+                                width: 70%;
+                                display: block;
+                                margin: 0 auto;
+                            }
+                            
+                            .intro-text {
+                                color: white;
+                                text-align: center
+                            }
+                            
+                            .intro-text h1 {
+                                font-size: 20px;
+                                font-weight: 700;
+                                margin: .2rem auto;
+                                line-height: 1.4;
+                            }
+                            
+                            .intro-text p {
+                                font-size: 14px;
+                                line-height: 1.4;
+                                font-weight: 700;
+                            }
+                            
+                            .cap {
+                                font-weight: 700;
+                                font-size: 2rem;
+                                color: #444;
+                            }
+                            /*MOBILE HEADER ENDS*/
+                            /*MOBILE DESKTOP START*/
+                            
+                            @media only screen and (min-width: 768px) {
+                                .top-bar {
+                                    display: flex;
+                                    justify-content: space-between;
+                                }
+                                .awards {
+                                    display: flex;
+                                    flex-direction: row;
+                                }
+                                .awards img {
+                                    margin-right: 15px;
+                                    max-height: 50px;
+                                    padding-top: 20px;
+                                }
+                                .brand {
+                                    width: 50%;
+                                    margin-top: 20px;
+                                    display: block;
+                                }
+                                .brand img {
+                                    width: 40%;
+                                    display: block;
+                                    float: left;
+                                }
+                                .intro-text h1 {
+                                    font-size: 3rem;
+                                    font-weight: 700;
+                                    margin: .2rem auto;
+                                    line-height: 1.4;
+                                }
+                                .intro-text p {
+                                    font-size: 1.5rem;
+                                    line-height: 1.4;
+                                    font-weight: 700;
+                                }
+                            }
+                            /*MOBILE DESKTOP ENDS*/
+                            /*MOBILE MAIN START*/
+                            
+                            #survey-container {
+                                background-color: #ffffff;
+                                border-radius: 10px;
+                                -webkit-box-shadow: 2px 6px 14px 0px rgba(0, 0, 0, 0.75);
+                                -moz-box-shadow: 2px 6px 14px 0px rgba(0, 0, 0, 0.75);
+                                box-shadow: 2px 6px 14px 0px rgba(0, 0, 0, 0.75);
+                            }
+                            
+                            .progress {
+                                display: block;
+                                margin-top: 20px!important;
+                            }
+                            
+                            .progress-text {
+                                color: black;
+                            }
+                            
+                            .input-div {
+                                height: 45px;
+                                -webkit-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
+                                -moz-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
+                                box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
+                                margin-bottom: 20px !important;
+                                line-height: 45px;
+                                border-radius: 5px;
+                                width: 100%;
+                                display: block;
+                                margin: 0 auto;
+                                font-size: 1.8rem;
+                                background-color: rgba(234, 238, 240, 0.384);
+                            }
+                            
+                            .input-div input {
+                                margin-left: 10px !important;
+                                padding-right: 10px !important;
+                            }
+                            
+                            .input-div:hover {
+                                background-color: #E5F5FB;
+                            }
+                            
+                            .input-active {
+                                background-color: #E5F5FB !important;
+                            }
+                            
+                            .input-div label {
+                                display: inline-block;
+                                width: 90%;
+                                padding-left: 10px;
+                                background: transparent !important;
+                            }
+                            
+                            .survey-question {
+                                text-align: left;
+                                font-size: 2rem;
+                                font-weight: 600;
+                                color: #444;
+                            }
+                            
+                            .survey-images {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                justify-content: space-around;
+                            }
+                            
+                            .survey-image p {
+                                text-align: center;
+                                font-size: 1.6rem;
+                                font-weight: 700;
+                            }
+                            
+                            .survey-image {
+                                background-color: #F9F9F9;
+                                width: 47%;
+                                border: none;
+                                -webkit-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
+                                -moz-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
+                                box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
+                            }
+                            
+                            .survey-images div:hover {
+                                background-color: #E5F5FB;
+                                transform: scale(0.99);
+                            }
+                            
+                            .survey-image-own,
+                            .survey-image-rent {
+                                border: 1px solid black;
+                                border-radius: 10px;
+                                pointer-events: all;
+                                cursor: pointer;
+                            }
+                            
+                            .survey-image-own img {
+                                display: block;
+                                margin: 0 auto;
+                                padding: 15px 0px;
+                                width: 80%;
+                            }
+                            
+                            .survey-image-rent img {
+                                display: block;
+                                margin: 0 auto;
+                                padding: 15px 0px;
+                                width: 80%;
+                            }
+                            
+                            .form-check {
+                                padding: 5px 20px;
+                                margin-left: 15px;
+                                opacity: 1;
+                                background: transparent !important;
+                            }
+                            
+                            .form-check label {
+                                text-align: center;
+                                width: 95%;
+                                float: right;
+                                font-size: 1.7rem;
+                            }
+                            
+                            .form-check-input:checked {
+                                background-color: black !important;
+                                border: black !important;
+                            }
+                            
+                            .survey-button {
+                                display: block;
+                                margin: 0 auto;
+                                border-radius: 100px;
+                                line-height: 2;
+                                font-size: 2rem;
+                                font-weight: 700;
+                                padding: 10px;
+                                color: white;
+                                background: radial-gradient( #fba52d8e, #f39410);
+                                text-shadow: -1px -1px 0 rgb(110, 110, 110), 1px -1px 0 rgba(109, 109, 109, 0.247), -1px 1px 0 rgb(119, 119, 119), 1px 1px 0 rgba(0, 0, 0, 0.315);
+                                border: none;
+                                width: 90%;
+                            }
+                            
+                            .timer-text {
+                                font-style: italic;
+                                text-align: center;
+                                line-height: 1.2;
+                                font-weight: 200 !important;
+                                font-size: 1.5rem;
+                                width: 90%;
+                            }
+                            
+                            .timer-text img {
+                                padding-bottom: 5px;
+                            }
+                            
+                            .go-back {
+                                border: 1px solid rgba(0, 0, 0, 0.329);
+                                height: 35px;
+                                width: 90px;
+                                border-radius: 20px;
+                                background: transparent !important;
+                            }
+                            
+                            .go-back::before {
+                                content: "";
+                                display: inline-block;
+                                width: 1.5rem;
+                                height: 1.5rem;
+                                border: 2px solid transparent;
+                                border-left-color: currentcolor;
+                                border-top-color: currentcolor;
+                                -webkit-transform: rotate(-45deg);
+                                transform: rotate(-45deg);
+                                position: relative;
+                                top: 3px;
+                            }
+                            
+                            .privacy {
+                                text-align: center;
+                                width: 100%;
+                                margin: 0px 0px 0px 0px !important;
+                                padding: 20px 20px;
+                                color: black;
+                                min-width: 100% !important;
+                            }
+                            
+                            .privacy a {
+                                color: black;
+                                text-decoration: underline;
+                                font-size: 1.7rem;
+                            }
+                            
+                            .marketing-container {
+                                background-color: #D2D0E0;
+                                border-radius: 10px;
+                                padding: 40px !important;
+                            }
+                            
+                            .marketing-container h1 {
+                                color: #4062BB;
+                                font-size: 2rem;
+                                font-weight: 600;
+                            }
+                            
+                            .marketing-label {
+                                font-weight: 400;
+                                font-size: 1.5rem;
+                            }
+                            
+                            .marketing-list {
+                                list-style: none;
+                            }
+                            
+                            .marketing-list .li-phone::marker {
+                                content: url(../assets/icons/phone.png);
+                            }
+                            
+                            .marketing-list .li-warning::marker {
+                                content: url(../assets/icons/warning.png);
+                                margin-right: 5px !important;
+                            }
+                            /*MOBILE MAIN-ENDS*/
+                            /*TABLET MAIN START*/
+                            
+                            @media only screen and (min-width: 768px) {
+                                #survey-container {
+                                    max-width: 668px;
+                                }
+                                .survey-images {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    justify-content: space-evenly;
+                                }
+                                .survey-image {
+                                    background-color: #F9F9F9;
+                                    width: 30%;
+                                    border: none;
+                                    -webkit-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
+                                    -moz-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
+                                    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
+                                }
+                                .survey-button {
+                                    width: 100%;
+                                }
+                                .survey-button:hover {
+                                    -webkit-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
+                                    -moz-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
+                                    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
+                                    background: radial-gradient( #fba52d49, #f38f03);
+                                }
+                                .input-div {
+                                    height: 45px;
+                                    -webkit-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
+                                    -moz-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
+                                    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
+                                    margin-bottom: 20px !important;
+                                    line-height: 45px;
+                                    border-radius: 10px;
+                                    width: 600px;
+                                    display: block;
+                                    margin: 0 auto;
+                                    font-size: 1.8rem;
+                                }
+                                .input-div input {
+                                    margin-left: 10px !important;
+                                    padding-right: 10px !important;
+                                }
+                                .input-div:hover {
+                                    background-color: #E5F5FB;
+                                }
+                                .input-active {
+                                    background-color: #E5F5FB !important;
+                                }
+                                .input-div label {
+                                    display: inline-block;
+                                    width: 95%;
+                                    padding-left: 10px;
+                                    cursor: pointer;
+                                    font-size: 2rem;
+                                    font-weight: 200;
+                                }
+                            }
+                            /*TABLET MAIN ENDS*/
+                            /*MOBILE FOOTER START*/
+                            
+                            #pre-footer h3 {
+                                color: white;
+                                text-align: center;
+                                font-size: 2.2rem;
+                                padding-bottom: 20px;
+                                border-bottom: 1px solid white;
+                            }
+                            
+                            #pre-footer ol li {
+                                color: white;
+                                font-size: 1.8rem;
+                                padding-bottom: 30px;
+                            }
+                            
+                            #footer {
+                                background-color: #272728;
+                                color: white;
+                                text-align: center;
+                            }
+                            
+                            #footer a {
+                                color: white;
+                                text-align: center;
+                                text-decoration: underline;
+                            }
+                            /*MOBILE FOOTER ENDS*/
+                            /*TABLET FOOTER START*/
+                            
+                            @media only screen and (min-width: 768px) {
+                                #pre-footer h3 {
+                                    color: white;
+                                    text-align: center;
+                                    font-size: 2.2rem;
+                                    padding-bottom: 20px;
+                                    border-bottom: 1px solid white;
+                                }
+                                #pre-footer {
+                                    max-width: 60%;
+                                }
+                                #pre-footer ol li {
+                                    color: white;
+                                    font-size: 2rem;
+                                    padding-bottom: 40px;
+                                }
+                                #footer {
+                                    background-color: #272728;
+                                    color: white;
+                                    text-align: center;
+                                    font-size: 1.7rem;
+                                }
+                                #footer a {
+                                    color: white;
+                                    text-align: center;
+                                    text-decoration: underline;
+                                }
+                            }
+                            /*TABLET FOOTER ENDS*/
