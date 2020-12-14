@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Muli, sans-serif;
+    font-family: Poppins, sans-serif;
     box-sizing: border-box;
 }
 
@@ -291,6 +291,7 @@ input[type="checkbox"] {
     background: radial-gradient( #fba52d8e, #f39410);
     text-shadow: -1px -1px 0 rgb(110, 110, 110), 1px -1px 0 rgba(109, 109, 109, 0.247), -1px 1px 0 rgb(119, 119, 119), 1px 1px 0 rgba(0, 0, 0, 0.315);
     border: none;
+    outline: none !important;
     width: 90%;
 }
 
@@ -298,9 +299,9 @@ input[type="checkbox"] {
     font-style: italic;
     text-align: center;
     line-height: 1.2;
-    font-weight: 200 !important;
+    font-weight: 300 !important;
     font-size: 1.5rem;
-    width: 90%;
+    width: 100%;
 }
 
 .timer-text img {
@@ -313,6 +314,16 @@ input[type="checkbox"] {
     width: 90px;
     border-radius: 20px;
     background: transparent !important;
+    outline: none !important;
+}
+
+.go-back:hover {
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    height: 35px;
+    width: 90px;
+    border-radius: 20px;
+    background: #e7e7e7 !important;
+    outline: none !important;
 }
 
 .go-back::before {
@@ -365,17 +376,19 @@ input[type="checkbox"] {
 }
 
 .marketing-list {
-    list-style: none;
+    padding: 0;
+    list-style-position: inside;
 }
 
-.marketing-list .li-phone::marker {
+
+/*.marketing-list .li-phone::marker {
     content: url(../assets/icons/phone.png);
 }
 
 .marketing-list .li-warning::marker {
     content: url(../assets/icons/warning.png);
     margin-right: 5px !important;
-}
+}*/
 
 #faq {
     background-color: white;
@@ -481,6 +494,12 @@ input[type="checkbox"] {
     #survey-container {
         max-width: 668px;
     }
+    .survey-question {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 600;
+        color: #444;
+    }
     .survey-images {
         display: flex;
         align-items: center;
@@ -522,7 +541,7 @@ input[type="checkbox"] {
         box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.48);
         margin-bottom: 20px !important;
         line-height: 45px;
-        border-radius: 10px;
+        border-radius: 5px;
         max-width: 630px !important;
         display: block;
         margin: 0 auto;
